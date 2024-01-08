@@ -1,0 +1,18 @@
+[submodule "cosmos-sdk"]
+	path = cosmos-sdk
+	url = https://github.com/cosmos/cosmos-sdk.git
+[submodule "xpla"]
+	path = xpla
+	url = https://github.com/xpladev/xpla.git
+[submodule "evmos"]
+	path = evmos
+	url = https://github.com/evmos/evmos.git
+[submodule "ethermint"]
+	path = ethermint
+	url = https://github.com/evmos/ethermint.git
+[submodule "cosmwasm"]
+	path = cosmwasm
+	url = https://github.com/CosmWasm/wasmd.git
+[submodule "ibc"]
+	path = ibc
+	url = https://github.com/cosmos/ibc-go.git
