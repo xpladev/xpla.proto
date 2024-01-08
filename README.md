@@ -43,6 +43,8 @@ git checkout tags/v4.5.1
 # js build
 
 ```sh
+git submodule init
+git submodule update
 cd js
 npm i
 ./scripts/proto-gen.sh
