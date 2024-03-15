@@ -1,0 +1,18 @@
+# js의 빌드 파일들
+node_modules
+js/src/
+js/build/
+js/cosmos/
+js/cosmos_proto/
+js/cosmwasm/
+js/ethermint/
+js/evmos/
+js/gogoproto/
+js/google/
+js/ibc/
+js/tendermint/
+js/xpla/
+js/proofs.d.ts
+js/proofs.js
+js/proofs.js.map
+
