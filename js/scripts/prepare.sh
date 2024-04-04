@@ -2,7 +2,7 @@
 set -o errexit -o nounset -o pipefail
 command -v shellcheck >/dev/null && shellcheck "$0"
 
-DIRS="cosmos cosmos_proto cosmwasm ethermint evmos gogoproto google ibc tendermint xpla"
+DIRS="cosmos cosmos_proto cosmwasm ethermint evmos gogoproto google ibc tendermint xpla offchain"
 
 for dir in $DIRS; do
   rm -rf "$dir"
