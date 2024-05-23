@@ -2,6 +2,7 @@
 node_modules
 js/src/
 js/build/
+js/amino/
 js/cosmos/
 js/cosmos_proto/
 js/cosmwasm/
@@ -12,7 +13,8 @@ js/google/
 js/ibc/
 js/tendermint/
 js/xpla/
+js/offchain/
 js/proofs.d.ts
 js/proofs.js
 js/proofs.js.map
-
+/proto

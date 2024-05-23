@@ -1,18 +1,30 @@
+[submodule "googleapis"]
+	path = googleapis
+	url = https://github.com/gogo/googleapis.git
+[submodule "gogoproto"]
+	path = gogoproto
+	url = https://github.com/cosmos/gogoproto.git
+[submodule "cometbft"]
+	path = cometbft
+	url = https://github.com/cometbft/cometbft.git
+[submodule "cosmos-proto"]
+	path = cosmos-proto
+	url = https://github.com/cosmos/cosmos-proto.git
 [submodule "cosmos-sdk"]
 	path = cosmos-sdk
 	url = https://github.com/cosmos/cosmos-sdk.git
 [submodule "xpla"]
 	path = xpla
 	url = https://github.com/xpladev/xpla.git
-[submodule "evmos"]
-	path = evmos
-	url = https://github.com/evmos/evmos.git
 [submodule "ethermint"]
 	path = ethermint
-	url = https://github.com/evmos/ethermint.git
+	url = https://github.com/xpladev/ethermint.git
 [submodule "cosmwasm"]
 	path = cosmwasm
 	url = https://github.com/CosmWasm/wasmd.git
 [submodule "ibc"]
 	path = ibc
 	url = https://github.com/cosmos/ibc-go.git
+[submodule "ics23"]
+	path = ics23
+	url = https://github.com/cosmos/ics23.git
