@@ -4,9 +4,6 @@
 [submodule "gogoproto"]
 	path = gogoproto
 	url = https://github.com/cosmos/gogoproto.git
-[submodule "cometbft"]
-	path = cometbft
-	url = https://github.com/cometbft/cometbft.git
 [submodule "cosmos-proto"]
 	path = cosmos-proto
 	url = https://github.com/cosmos/cosmos-proto.git
