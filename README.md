@@ -27,13 +27,6 @@ cd ..
 ```
 
 ```sh
-#git submodule add https://github.com/cometbft/cometbft.git cometbft
-#cd cometbft
-#git checkout tags/v0.37.5
-cd ..
-```
-
-```sh
 git submodule add https://github.com/cosmos/cosmos-proto.git cosmos-proto
 cd cosmos-proto
 git checkout tags/v1.0.0-beta.4
