@@ -29,7 +29,7 @@ cd ..
 ```sh
 git submodule add https://github.com/cosmos/cosmos-proto.git cosmos-proto
 cd cosmos-proto
-git checkout tags/v1.0.0-beta.4
+git checkout tags/v1.0.0-beta.5
 cd ..
 ```
 
@@ -50,36 +50,35 @@ cd ..
 ```sh
 git submodule add https://github.com/cosmos/ibc-go.git ibc
 cd ibc
-git checkout tags/v7.4.0
+git checkout tags/v7.7.0
 cd ..
 ```
 
 ```sh
 git submodule add https://github.com/xpladev/ethermint.git
 cd ethermint
-git checkout tags/v0.23.0-xpla-1
+git checkout tags/v0.23.0-xpla-4
 cd ..
 ```
 
 ```sh
 git submodule add https://github.com/cosmos/cosmos-sdk.git cosmos-sdk
 cd cosmos-sdk
-git checkout tags/v0.47.10
+git checkout tags/v0.47.13
 cd ..
 ```
 
 ```sh
 git submodule add https://github.com/xpladev/xpla.git xpla
 cd xpla
-git checkout tags/v1.5.0
+git checkout tags/v1.6.0-rc0
 cd ..
 ```
 
 # js build
 
 ```sh
-git submodule init
-git submodule update
+git submodule update --init --recursive
 cd js
 npm i
 ./scripts/proto-gen.sh
