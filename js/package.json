@@ -1,6 +1,6 @@
 {
   "name": "@xpla/xpla.proto",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "JS and TS types relating to Protocol Buffers used by XPLA",
   "files": [
     "proofs.*",
@@ -25,14 +25,14 @@
   "dependencies": {
     "@improbable-eng/grpc-web": "^0.15.0",
     "browser-headers": "^0.4.1",
-    "google-protobuf": "^3.21.2",
-    "protobufjs": "^7.2.5"
+    "google-protobuf": "^3.21.4",
+    "protobufjs": "^7.3.2"
   },
   "devDependencies": {
     "@types/google-protobuf": "^3.15.12",
-    "@types/node": "^20.10.5",
-    "prettier": "^3.1.1",
-    "ts-proto": "^1.165.1",
-    "typescript": "^5.3.3"
+    "@types/node": "^22.1.0",
+    "prettier": "^3.3.3",
+    "ts-proto": "^1.181.1",
+    "typescript": "^5.5.4"
   }
 }

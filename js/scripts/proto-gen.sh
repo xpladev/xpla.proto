@@ -10,7 +10,7 @@ PROTOC_GEN_TS_PROTO_PATH="./node_modules/.bin/protoc-gen-ts_proto"
 mkdir -p "$OUT_DIR"
 
 echo "Processing xpla proto files ..."
-THIRD_PARTY_DIRS=("../googleapis/google" "../gogoproto/gogoproto" "../cosmos-proto/proto/cosmos_proto" "../cosmwasm/proto/cosmwasm" "../ics23/proto/cosmos" "../ethermint/proto/ethermint")
+THIRD_PARTY_DIRS=("../googleapis/google" "../gogoproto/gogoproto" "../cosmos-proto/proto/cosmos_proto" "../cosmwasm/proto/cosmwasm" "../ics23/proto/cosmos" "../ethermint/proto/ethermint" "../ethermint/proto/evmos")
 COSMOS_DIR="../cosmos-sdk/proto"
 IBC_DIR="../ibc/proto"
 XPLA_DIR="../xpla/proto"
