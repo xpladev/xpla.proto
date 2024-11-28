@@ -1,6 +1,6 @@
 {
   "name": "@xpla/xpla.proto",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "JS and TS types relating to Protocol Buffers used by XPLA",
   "files": [
     "proofs.*",

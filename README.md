@@ -22,7 +22,7 @@ cd ..
 ```sh
 git submodule add https://github.com/cosmos/gogoproto.git gogoproto
 cd gogoproto
-git checkout tags/v1.4.10
+git checkout tags/v1.7.0
 cd ..
 ```
 
@@ -36,42 +36,42 @@ cd ..
 ```sh
 git submodule add https://github.com/CosmWasm/wasmd.git cosmwasm
 cd cosmwasm
-git checkout tags/v0.45.0
+git checkout tags/v0.53.0
 cd ..
 ```
 
 ```sh
 git submodule add https://github.com/cosmos/ics23.git ics23
 cd ics23
-git checkout tags/go/v0.10.0
+git checkout tags/go/v0.11.0
 cd ..
 ```
 
 ```sh
 git submodule add https://github.com/cosmos/ibc-go.git ibc
 cd ibc
-git checkout tags/v7.7.0
+git checkout tags/v8.4.0
 cd ..
 ```
 
 ```sh
 git submodule add https://github.com/xpladev/ethermint.git
 cd ethermint
-git checkout tags/v0.23.0-xpla-4
+git checkout tags/v0.24.0-xpla-rc3
 cd ..
 ```
 
 ```sh
 git submodule add https://github.com/cosmos/cosmos-sdk.git cosmos-sdk
 cd cosmos-sdk
-git checkout tags/v0.47.13
+git checkout tags/v0.50.10
 cd ..
 ```
 
 ```sh
 git submodule add https://github.com/xpladev/xpla.git xpla
 cd xpla
-git checkout tags/v1.6.0-rc0
+git checkout tags/v1.7.0-rc2
 cd ..
 ```
 
