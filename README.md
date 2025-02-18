@@ -75,12 +75,23 @@ git checkout tags/v1.7.0-rc2
 cd ..
 ```
 
+# common
+```sh
+git submodule update --init --recursive
+```
+
 # js build
 
 ```sh
-git submodule update --init --recursive
 cd js
 npm i
 ./scripts/proto-gen.sh
 npm run build
+```
+
+# swift build
+
+```sh
+cd swift
+./scripts/proto-gen.sh
 ```
