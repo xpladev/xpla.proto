@@ -12,6 +12,7 @@ COSMOS_DIR="../cosmos-sdk/proto"
 IBC_DIR="../ibc/proto"
 XPLA_DIR="../xpla/proto"
 OFFCHAIN_DIR="../offchain/proto"
+TX_DIR="../tx/proto"
 
 mkdir -p ../proto
 pushd ../proto
@@ -29,8 +30,9 @@ protoc \
   --proto_path="$IBC_DIR" \
   --proto_path="$XPLA_DIR" \
   --proto_path="$OFFCHAIN_DIR" \
+  --proto_path="$TX_DIR" \
   --proto_path="../proto" \
-  $(find -L ${COSMOS_DIR} ${IBC_DIR} ${XPLA_DIR} ${OFFCHAIN_DIR} ../proto -path -prune -o -name '*.proto' -print0 | xargs -0)
+  $(find -L ${COSMOS_DIR} ${IBC_DIR} ${XPLA_DIR} ${OFFCHAIN_DIR} ${TX_DIR} ../proto -path -prune -o -name '*.proto' -print0 | xargs -0)
 
 echo "✅ finsihed proto generation"
 
