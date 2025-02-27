@@ -16,7 +16,7 @@ TX_DIR="../tx/proto"
 
 mkdir -p ../proto
 pushd ../proto
-rm -f *
+rm -rf *
 for dir in "${THIRD_PARTY_DIRS[@]}"; do
   ln -sf $dir ${dir##*\/}
 done
@@ -44,7 +44,7 @@ echo "" >> "$CODEC_FILE"
 echo "public func registerAllMessages() {" >> "$CODEC_FILE"
 
 # find Msg struct and generate register code
-grep -rhE "public struct [A-Za-z0-9_]+_Msg[A-Za-z0-9_]*: Sendable" "$OUT_DIR" | \
+grep -rhE "public struct [A-Za-z0-9_]+_Msg[A-Za-z0-9_]*: (@unchecked )?Sendable" "$OUT_DIR" | \
     awk '{print $3}' | \
     sed 's/:$//' | \
     grep -v "Response$" | \
