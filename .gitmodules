@@ -21,7 +21,7 @@
 	url = https://github.com/cosmos/ics23.git
 [submodule "evm"]
 	path = evm
-	url = https://github.com/xpladev/evm.git
+	url = https://github.com/cosmos/evm.git
 [submodule "cosmos-sdk"]
 	path = cosmos-sdk
-	url = https://github.com/xpladev/cosmos-sdk
+	url = https://github.com/cosmos/cosmos-sdk

@@ -56,19 +56,23 @@ git checkout tags/v10.3.0
 cd ..
 ```
 
+Remove the existing ethermint proto.
+For backward compatibility, use the protos from the `/legacy/ethermint/proto` directory in the `xpla` module.
 ```sh
 git rm ethermint
-git submodule add https://github.com/xpladev/evm.git evm
+```
+
+```sh
+git submodule add https://github.com/cosmos/evm.git evm
 cd evm
-git checkout tags/v0.3.0-xpla
+git checkout tags/v0.3.0
 cd ..
 ```
 
 ```sh
-git rm cosmos-sdk
-git submodule add https://github.com/xpladev/cosmos-sdk cosmos-sdk
+git submodule add https://github.com/cosmos/cosmos-sdk cosmos-sdk
 cd cosmos-sdk
-git checkout tags/v0.53.4-xpla
+git checkout tags/v0.53.4
 cd ..
 ```
 
