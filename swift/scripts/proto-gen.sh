@@ -25,7 +25,10 @@ popd
 protoc \
   --swift_opt=Visibility=Public \
   --swift_opt=FileNaming=PathToUnderscores \
+  --grpc-swift_opt=Visibility=Public \
+  --grpc-swift_opt=FileNaming=PathToUnderscores \
   --swift_out="$OUT_DIR" \
+  --grpc-swift_out="$OUT_DIR" \
   --proto_path="$COSMOS_DIR" \
   --proto_path="$IBC_DIR" \
   --proto_path="$XPLA_DIR" \
