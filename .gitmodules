@@ -7,15 +7,9 @@
 [submodule "cosmos-proto"]
 	path = cosmos-proto
 	url = https://github.com/cosmos/cosmos-proto.git
-[submodule "cosmos-sdk"]
-	path = cosmos-sdk
-	url = https://github.com/cosmos/cosmos-sdk.git
 [submodule "xpla"]
 	path = xpla
 	url = https://github.com/xpladev/xpla.git
-[submodule "ethermint"]
-	path = ethermint
-	url = https://github.com/xpladev/ethermint.git
 [submodule "cosmwasm"]
 	path = cosmwasm
 	url = https://github.com/CosmWasm/wasmd.git
@@ -25,3 +19,9 @@
 [submodule "ics23"]
 	path = ics23
 	url = https://github.com/cosmos/ics23.git
+[submodule "evm"]
+	path = evm
+	url = https://github.com/cosmos/evm.git
+[submodule "cosmos-sdk"]
+	path = cosmos-sdk
+	url = https://github.com/cosmos/cosmos-sdk

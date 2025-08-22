@@ -10,7 +10,8 @@ PROTOC_GEN_TS_PROTO_PATH="./node_modules/.bin/protoc-gen-ts_proto"
 mkdir -p "$OUT_DIR"
 
 echo "Processing xpla proto files ..."
-THIRD_PARTY_DIRS=("../googleapis/google" "../gogoproto/gogoproto" "../cosmos-proto/proto/cosmos_proto" "../cosmwasm/proto/cosmwasm" "../ics23/proto/cosmos" "../ethermint/proto/ethermint" "../ethermint/proto/evmos")
+COSMOS_THIRD_PARTY_DIRS=("../ics23/proto/cosmos/ics23" "../evm/proto/cosmos/evm")
+THIRD_PARTY_DIRS=("../googleapis/google" "../gogoproto/gogoproto" "../cosmos-proto/proto/cosmos_proto" "../cosmwasm/proto/cosmwasm" "../xpla/legacy/ethermint/proto/ethermint" "../xpla/legacy/ethermint/proto/evmos")
 COSMOS_DIR="../cosmos-sdk/proto"
 IBC_DIR="../ibc/proto"
 XPLA_DIR="../xpla/proto"
@@ -18,7 +19,13 @@ OFFCHAIN_DIR="../offchain/proto"
 
 mkdir -p ../proto
 pushd ../proto
-rm -f *
+rm -rf *
+mkdir cosmos
+cd cosmos
+for dir in "${COSMOS_THIRD_PARTY_DIRS[@]}"; do
+  ln -sf ../$dir ${dir##*\/}
+done
+cd ..
 for dir in "${THIRD_PARTY_DIRS[@]}"; do
   ln -sf $dir ${dir##*\/}
 done
