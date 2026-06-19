@@ -36,7 +36,7 @@ cd ..
 ```sh
 git submodule add https://github.com/CosmWasm/wasmd.git cosmwasm
 cd cosmwasm
-git checkout tags/v0.60.5
+git checkout tags/v0.60.6
 cd ..
 ```
 
@@ -63,21 +63,21 @@ git rm ethermint
 ```sh
 git submodule add https://github.com/cosmos/evm.git evm
 cd evm
-git checkout tags/v0.5.1
+git checkout tags/v0.6.0
 cd ..
 ```
 
 ```sh
 git submodule add https://github.com/cosmos/cosmos-sdk cosmos-sdk
 cd cosmos-sdk
-git checkout tags/v0.53.5
+git checkout tags/v0.53.6
 cd ..
 ```
 
 ```sh
 git submodule add https://github.com/xpladev/xpla.git xpla
 cd xpla
-git checkout tags/v1.9.0-rc1
+git checkout tags/v1.10.1
 cd ..
 ```
 
