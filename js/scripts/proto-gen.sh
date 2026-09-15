@@ -7,6 +7,8 @@ OUT_DIR="./src"
 # Path to this plugin, Note this must be an abolsute path on Windows (see #15)
 PROTOC_GEN_TS_PROTO_PATH="./node_modules/.bin/protoc-gen-ts_proto"
 
+# All source files in OUT_DIR are generated.
+rm -rf "$OUT_DIR"
 mkdir -p "$OUT_DIR"
 
 echo "Processing xpla proto files ..."
@@ -34,13 +36,10 @@ popd
 protoc \
   --plugin="protoc-gen-ts_proto=${PROTOC_GEN_TS_PROTO_PATH}" \
   --ts_proto_out="${OUT_DIR}" \
-  --ts_proto_opt="esModuleInterop=true,forceLong=long,useExactTypes=false,outputClientImpl=grpc-web" \
+  --ts_proto_opt="esModuleInterop=true,forceLong=long,useExactTypes=false,outputClientImpl=grpc-web,useDate=false,useJsonTimestamp=raw" \
   --proto_path="$COSMOS_DIR" \
   --proto_path="$IBC_DIR" \
   --proto_path="$XPLA_DIR" \
   --proto_path="$OFFCHAIN_DIR" \
   --proto_path="../proto" \
   $(find -L ${COSMOS_DIR} ${IBC_DIR} ${XPLA_DIR} ${OFFCHAIN_DIR} ../proto -path -prune -o -name '*.proto' -print0 | xargs -0)
-
-#rm -f ../proto/*
-#rmdir ../proto
