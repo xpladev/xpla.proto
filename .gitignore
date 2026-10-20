@@ -19,3 +19,8 @@ js/proofs.js
 js/proofs.js.map
 /proto
 swift/proto
+
+# Generated packages and interrupted temporary generation outputs
+js/packetforward/
+js/ratelimit/
+js/.proto-gen.*/

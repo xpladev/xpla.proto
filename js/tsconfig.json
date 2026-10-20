@@ -1,26 +1,28 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "declaration": true,
+    "target": "ES2020",
+    "module": "Node16",
+    "moduleResolution": "Node16",
+    "lib": [
+      "ES2020",
+      "DOM"
+    ],
+    "types": [],
+    "rootDir": "src",
+    "outDir": "build",
+    "strict": true,
+    "noEmitOnError": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": false,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": ["es2017", "dom"],
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "newLine": "LF",
-    "noEmitOnError": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "outDir": "build",
-    "pretty": true,
-    "removeComments": false,
-    "resolveJsonModule": true,
-    "rootDir": "src",
+    "declaration": true,
     "sourceMap": true,
-    "strict": true,
-    "target": "es2017",
+    "inlineSources": true,
+    "newLine": "lf"
   },
-  "include": ["src/**/*"],
+  "include": [
+    "src/**/*.ts"
+  ]
 }

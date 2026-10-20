@@ -36,7 +36,7 @@ cd ..
 ```sh
 git submodule add https://github.com/CosmWasm/wasmd.git cosmwasm
 cd cosmwasm
-git checkout tags/v0.60.6
+git checkout tags/v0.60.9
 cd ..
 ```
 
@@ -61,25 +61,31 @@ git rm ethermint
 ```
 
 ```sh
-git submodule add https://github.com/cosmos/evm.git evm
+git submodule add https://github.com/DELIGHT-LABS/evm.git evm
 cd evm
-git checkout tags/v0.6.0
+git checkout tags/v0.6.3-xpla.2
 cd ..
 ```
 
 ```sh
-git submodule add https://github.com/cosmos/cosmos-sdk cosmos-sdk
+git submodule add https://github.com/xpladev/cosmos-sdk.git cosmos-sdk
 cd cosmos-sdk
-git checkout tags/v0.53.6
+git checkout tags/v0.53.6-xpla-2
 cd ..
 ```
 
 ```sh
 git submodule add https://github.com/xpladev/xpla.git xpla
 cd xpla
-git checkout tags/v1.10.1
+git checkout tags/v1.14.0
 cd ..
 ```
+
+# IBC middleware
+
+Both packet-forward-middleware v10.1.0 and rate-limiting v10.1.0 use commit
+`78f302bdd30723f90dd760c2bbc3b07cd3fad7fb` from `https://github.com/cosmos/ibc-apps`.
+The `ibc-apps` submodule supplies both proto directories.
 
 # common
 ```sh
@@ -90,8 +96,8 @@ git submodule update --init --recursive
 
 ```sh
 cd js
-npm i
-./scripts/proto-gen.sh
+nvm use
+npm ci
 npm run build
 ```
 
