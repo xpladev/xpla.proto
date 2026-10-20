@@ -1,21 +1,15 @@
-all: init proto-gen format
+all: build
 
 init:
-	#@echo "Pull External Protofiles"
-	#git submodule init
-	#git submodule update
-
-	@echo "Install dependencies"
-	npm i
+	npm ci
 
 format:
 	npm run format
 
-proto-gen: 
-	@echo "Generating Protobuf files"
-	./scripts/proto-gen.sh
+proto-gen:
+	npm run generate
 
-build: 
+build:
 	npm run build
 
 .PHONY: all proto-gen format init build

@@ -1,9 +1,9 @@
 {
   "name": "@xpla/xpla.proto",
-  "version": "1.11.0",
+  "version": "1.14.0",
   "description": "JS and TS types relating to Protocol Buffers used by XPLA",
   "files": [
-    "proofs.*",
+    "amino/",
     "cosmos/",
     "cosmos_proto/",
     "cosmwasm/",
@@ -12,27 +12,34 @@
     "gogoproto/",
     "google/",
     "ibc/",
+    "offchain/",
+    "packetforward/",
+    "ratelimit/",
     "tendermint/",
     "xpla/",
-    "offchain/",
     "*.md"
   ],
   "scripts": {
-    "format": "prettier --write --loglevel warn \"./src/**/*.ts\"",
-    "build": "rm -rf ./build && tsc --module commonjs && ./scripts/prepare.sh",
+    "generate": "./scripts/proto-gen.sh && npm run format",
+    "format": "prettier --write --log-level warn \"./src/**/*.ts\"",
+    "build": "npm run generate && rm -rf ./build && tsc && ./scripts/prepare.sh",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@improbable-eng/grpc-web": "^0.15.0",
-    "browser-headers": "^0.4.1",
-    "google-protobuf": "^3.21.4",
-    "protobufjs": "^7.3.2"
+    "@bufbuild/protobuf": "2.16.0",
+    "@improbable-eng/grpc-web": "0.15.0",
+    "browser-headers": "0.4.1",
+    "google-protobuf": "3.21.4"
   },
   "devDependencies": {
-    "@types/google-protobuf": "^3.15.12",
-    "@types/node": "^22.1.0",
-    "prettier": "^3.3.3",
-    "ts-proto": "^1.181.1",
-    "typescript": "^5.5.4"
+    "@types/google-protobuf": "3.15.12",
+    "@types/node": "22.20.5",
+    "prettier": "3.9.10",
+    "ts-proto": "2.15.0",
+    "typescript": "7.0.2"
+  },
+  "type": "commonjs",
+  "engines": {
+    "node": ">=22"
   }
 }
